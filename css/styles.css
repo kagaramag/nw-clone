@@ -1,0 +1,370 @@
+:root {
+  --roboto: 'Roboto Condensed', sans-serif;
+  --helvetica: Arial, Helvetica, sans-serif;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-danger: #f62110;
+  --color-gray-light: #c0c0c0;
+  --color-gray-dark: #333333;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  max-width: 1310px;
+  background: var(--color-white);
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+main {
+  width: 100%;
+  padding: 20px 1%;
+  margin: 0;
+  display: block;
+}
+
+header {
+  margin: 0;
+}
+
+.bg-danger {
+  background: #f62110 !important;
+}
+
+.text-danger {
+  color: #f62110 !important;
+}
+
+.bg-info {
+  background: #c1d4d7 !important;
+}
+
+.text-info {
+  color: #c1d4d7 !important;
+}
+
+.bg-light {
+  background: #f4f5f6 !important;
+}
+
+.text-light {
+  color: #f4f5f6 !important;
+}
+
+.bg-gray-light {
+  background: var(--color-gray-light);
+}
+
+.text-gray-light {
+  color: var(--color-gray-light);
+}
+
+.bg-gray {
+  background: var(--color-gray-light);
+}
+
+.text-gray {
+  color: var(--color-gray-light);
+}
+
+.topbar .row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.image-logo {
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 0;
+  display: block;
+}
+
+.image-logo img {
+  width: 100%;
+  max-width: 410px;
+  margin: 0 auto;
+  display: block;
+}
+
+a:hover {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.hover-line:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-danger);
+}
+
+.image {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.over-title {
+  font-family: var(--roboto);
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.navbar {
+  border-bottom: 3px solid #f4f5f6;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar li::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 24px;
+  width: 1px;
+  background: #cdcdcd;
+}
+.navbar li:last-child::before {
+  display: none;
+}
+
+.navbar a {
+  font-family: var(--roboto);
+  padding: 0 12px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.clear {
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--roboto);
+}
+
+.news-heading {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.vertical-bottom {
+  display: flex;
+}
+
+.vertical-bottom div,
+.vertical-bottom span {
+  align-self: flex-end;
+}
+
+.timestamp {
+  font-family: var(--roboto);
+  font-weight: lighter;
+}
+
+.text-roboto {
+  font-family: var(--roboto);
+}
+
+.text-arial {
+  font-family: var(--helvetica);
+  font-size: 15px;
+  font-weight: 100;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article h3 {
+  line-height: 24px;
+  font-size: 24px;
+  padding: 0;
+  font-weight: 600;
+}
+
+article h4 {
+  line-height: 20px;
+  font-size: 17px;
+  padding: 0;
+  font-weight: 600;
+}
+
+article a {
+  color: var(--color-black);
+}
+
+.more-button {
+  font-weight: 100;
+  font-family: var(--helvetica);
+}
+
+.summary {
+  color: var(--color-gray-dark);
+}
+
+.news-floating {
+  font-weight: var(--arial);
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0;
+  font-weight: 100;
+}
+
+.news-floating h4 {
+  line-height: 20px;
+  font-size: 16px;
+  padding: 0;
+  font-weight: bolder;
+}
+
+.media a {
+  line-height: 20px;
+  font-size: 17px;
+  padding: 0;
+  font-weight: 800;
+  color: var(--color-black)
+}
+.image-left {
+  float: left;
+  margin: 15px 20px 10px 0px;
+  border: solid 4px #fff;
+}
+
+.title {
+  clear: left;
+  display: block;
+}
+
+.divider {
+  height: 1px;
+  clear: both;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky + .content {
+  padding-top: 102px;
+} */
+
+/* Layout styles */
+.main-wrapper {
+  width: 100%;
+}
+
+.content-left,
+.content-right,
+.col1,
+.col2,
+.col3 {
+  margin: 0;
+  float: left;
+}
+
+/* small screen size */
+@media screen and (max-width: 767px) {
+  .content-left {
+    width: 100%;
+  }
+
+  .content-right {
+    width: 100%;
+  }
+
+  .col1 {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .col2 {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .col3 {
+    width: 100%;
+    margin: 0 0%;
+  }
+}
+
+/* medium screen size */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .content-left {
+    width: 100%;
+  }
+
+  .content-right {
+    width: 100%;
+  }
+
+  .col1 {
+    width: 43%;
+    margin: 0 1%;
+  }
+
+  .col2 {
+    width: 53%;
+    margin: 0 1%;
+  }
+
+  .col3 {
+    width: 96%;
+    margin: 0 2%;
+  }
+}
+
+/* large screen size */
+@media screen and (min-width: 992px) {
+  .content-left {
+    width: 71.5%;
+  }
+
+  .content-right {
+    width: 28.5%;
+  }
+
+  .col1 {
+    width: 36.5%;
+    margin: 0 2%;
+  }
+
+  .col2 {
+    width: 55.5%;
+    margin: 0 2%;
+  }
+
+  .col3 {
+    width: 96%;
+    margin: 0 2%;
+  }
+}
