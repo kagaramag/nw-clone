@@ -1,6 +1,7 @@
 :root {
   --roboto: 'Roboto Condensed', sans-serif;
   --helvetica: Arial, Helvetica, sans-serif;
+  --source-pro: 'Source Sans Pro';
   --color-black: #000;
   --color-white: #fff;
   --color-danger: #f62110;
@@ -33,9 +34,11 @@ main {
 
 header {
   margin: 0;
+  z-index: 120000;
 }
 
-.bg-danger {
+.bg-danger,
+.btn-danger {
   background: #f62110 !important;
 }
 
@@ -75,23 +78,47 @@ header {
   color: var(--color-gray-light);
 }
 
+.bg-black {
+  background: var(--color-black);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
 .topbar .row {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-.image-logo {
+#image-logo {
   max-width: 100%;
   margin: 10px auto;
   padding: 0;
   display: block;
 }
 
-.image-logo img {
+#image-logo img {
   width: 100%;
   max-width: 410px;
   margin: 0 auto;
   display: block;
+}
+
+#image-logo img {
+  width: 100%;
+  max-width: 410px;
+  margin: 0 auto;
+  display: block;
+}
+
+#image-logo.logo-on-small {
+  float: left;
+  width: 150px;
+}
+
+#image-logo.logo-on-small img {
+  float: left;
 }
 
 a:hover {
@@ -148,7 +175,7 @@ a:hover {
 
 .navbar a {
   font-family: var(--roboto);
-  padding: 0 12px;
+  padding: 0 0.6em;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -187,13 +214,21 @@ h5 {
 }
 
 .text-roboto {
-  font-family: var(--roboto);
+  font-family: var(--roboto) !important;
 }
 
 .text-arial {
   font-family: var(--helvetica);
   font-size: 15px;
   font-weight: 100;
+}
+.text-thin {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 300 !important;
+}
+.text-extra-thin {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 100 !important;
 }
 
 article {
@@ -247,7 +282,7 @@ article a {
   font-size: 17px;
   padding: 0;
   font-weight: 800;
-  color: var(--color-black)
+  color: var(--color-black);
 }
 .image-left {
   float: left;
@@ -265,17 +300,40 @@ article a {
   clear: both;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-/* .sticky {
+.wrap-footer-brand {
+  position: relative;
+}
+
+.wrap-footer-brand img {
+  max-width: 234px;
+  position: relative;
+  bottom: 0;
+}
+
+.wrap-footer-brand span {
+  position: relative;
+  bottom: -10px;
+}
+
+.wrap-footer-brand ul {
+  position: relative;
+  bottom: -10px;
+}
+
+.wrap-footer-brand a {
+  color: #676767!important
+}
+
+.sticky {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-} */
+}
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-/* .sticky + .content {
+.sticky + .content {
   padding-top: 102px;
-} */
+}
 
 /* Layout styles */
 .main-wrapper {
@@ -314,6 +372,19 @@ article a {
   .col3 {
     width: 100%;
     margin: 0 0%;
+  }
+  .wrap-footer-brand img,
+  .wrap-footer-brand span,
+  .wrap-footer-brand ul {
+    display: block;
+  }
+  .wrap-footer-brand ul {
+    float: left!important;
+    margin: 5px 0;
+  }
+  #image-logo {
+    float: left;
+    max-width: 160px;
   }
 }
 
@@ -367,4 +438,24 @@ article a {
     width: 96%;
     margin: 0 2%;
   }
+}
+
+.wrap-subscribe-box {
+  min-height: 270px;
+  padding: 25px 0;
+}
+
+.wrap-subscribe-box .image{
+ max-width: 300px;
+ display: block;
+ margin: 0 auto
+}
+
+.footer-links li {
+  padding-right: 10px;
+  border-right: 1px solid #d8d8d8;
+}
+
+.footer-links li:last-child {
+  border-right-width: 0px;
 }
