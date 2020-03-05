@@ -303,6 +303,14 @@ article h4 {
   float: left;
 }
 
+.footer-links li {
+  border-right: 1px solid #d8d8d8;
+}
+
+.footer-links li:last-child {
+  border-right-width: 0;
+}
+
 /* small screen size */
 @media screen and (max-width: 767px) {
   .content-left {
@@ -342,6 +350,22 @@ article h4 {
   #image-logo {
     float: left;
     max-width: 160px;
+  }
+
+  #fixed-header .navbar-brand {
+    margin-left: 3px;
+  }
+
+  .top-buttons button {
+    padding: 2px 3px;
+  }
+
+  .top-buttons button h1 {
+    font-size: 12px;
+  }
+
+  .footer-links li {
+    border-right-width: 0;
   }
 }
 
@@ -404,12 +428,4 @@ article h4 {
 .wrap-subscribe-box .image {
   max-width: 300px;
   display: block;
-}
-
-.footer-links li {
-  border-right: 1px solid #d8d8d8;
-}
-
-.footer-links li:last-child {
-  border-right-width: 0;
 }
