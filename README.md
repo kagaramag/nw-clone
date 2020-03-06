@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/kagaramag/nw-clone/development/index.html)
+[Live Demo Link](https://raw.githack.com/kagaramag/nw-clone/develop/index.html)
 
 ## Getting Started
 
