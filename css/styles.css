@@ -373,7 +373,7 @@ article h4 {
   }
 
   .footer-links li {
-    border-right-width: 0px;
+    border-right-width: 0;
   }
 }
 
